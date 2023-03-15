@@ -19,25 +19,24 @@ class TextFormWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      controller: controller,
-      autovalidateMode: AutovalidateMode.onUserInteraction,
-      keyboardType: keyboardType,
-      decoration: InputDecoration(
-        prefixIcon: Icon(prefixIcon),
-        hintText: hintText,
-        border: const OutlineInputBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(10),
+        controller: controller,
+        autovalidateMode: AutovalidateMode.onUserInteraction,
+        keyboardType: keyboardType,
+        decoration: InputDecoration(
+          prefixIcon: Icon(prefixIcon),
+          hintText: hintText,
+          border: const OutlineInputBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(10),
+            ),
           ),
         ),
-      ),
-      inputFormatters: inputFormatters,
-      validator: (String? value) {
-        if(value == null) {
-          return 'Field cannot be empty';
-        }
-        return null;
-      }
-    );
+        inputFormatters: inputFormatters,
+        validator: (String? value) {
+          if (value == null) {
+            return 'Field cannot be empty';
+          }
+          return null;
+        });
   }
 }

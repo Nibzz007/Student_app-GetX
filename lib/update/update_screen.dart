@@ -3,12 +3,12 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:student_app/constants/color/colors.dart';
-import 'package:student_app/constants/size/sizedBox.dart';
+import 'package:student_app/constants/size/sized_box.dart';
 import 'package:student_app/constants/style/style.dart';
 import 'package:student_app/controller/student_controller.dart';
 import 'package:student_app/main.dart';
-import 'package:student_app/view/homeScreen/widget/bottomSheet.dart';
-import 'package:student_app/view/listScreen/studentList_screen.dart';
+import 'package:student_app/view/homeScreen/widget/bottom_sheet.dart';
+import 'package:student_app/view/listScreen/student_list_screen.dart';
 
 import '../model/student_db.dart';
 

@@ -1,9 +1,8 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:student_app/constants/color/colors.dart';
-import 'package:student_app/constants/size/sizedBox.dart';
+import 'package:student_app/constants/size/sized_box.dart';
 import 'package:student_app/constants/style/style.dart';
 import 'package:student_app/controller/student_controller.dart';
 import 'package:student_app/update/update_screen.dart';
@@ -108,7 +107,7 @@ class ListStudentScreen extends StatelessWidget {
                                         Get.snackbar(
                                           'title',
                                           'message',
-                                          duration: Duration(seconds: 1),
+                                          duration: const Duration(seconds: 1),
                                           titleText: Center(
                                             child: Text(
                                               'Success',

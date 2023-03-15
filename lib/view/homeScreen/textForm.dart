@@ -2,14 +2,14 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:student_app/constants/color/colors.dart';
-import 'package:student_app/constants/size/sizedBox.dart';
+import 'package:student_app/constants/size/sized_box.dart';
 import 'package:student_app/constants/style/style.dart';
 import 'package:student_app/controller/student_controller.dart';
 import 'package:student_app/main.dart';
 import 'package:student_app/model/student_db.dart';
 import 'package:student_app/view/bottomNav/bottom_nav.dart';
-import 'package:student_app/view/homeScreen/widget/bottomSheet.dart';
-import 'package:student_app/view/homeScreen/widget/textFormWidget.dart';
+import 'package:student_app/view/homeScreen/widget/bottom_sheet.dart';
+import 'package:student_app/view/homeScreen/widget/text_form_widget.dart';
 
 final TextEditingController namController = TextEditingController();
 final TextEditingController ageController = TextEditingController();
@@ -138,10 +138,8 @@ class TextForm extends StatelessWidget {
     final number = numberController.text.trim();
 
     if (name.isEmpty || age.isEmpty || domain.isEmpty || number.isEmpty) {
-      Get.snackbar(
-        'Warning', 
-        'All fields are required',
-          duration: Duration(seconds: 1),
+      Get.snackbar('Warning', 'All fields are required',
+          duration: const Duration(seconds: 1),
           titleText: Center(
             child: Text(
               'Warning',
@@ -169,10 +167,8 @@ class TextForm extends StatelessWidget {
       );
 
       Get.offAll(() => const BottomNav());
-      Get.snackbar(
-        'title', 
-        'message',
-        duration: Duration(seconds: 1),
+      Get.snackbar('title', 'message',
+          duration: const Duration(seconds: 1),
           titleText: Center(
             child: Text(
               'Success',

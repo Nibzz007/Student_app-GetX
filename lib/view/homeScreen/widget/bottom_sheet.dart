@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:student_app/constants/style/style.dart';
 import 'package:student_app/controller/student_controller.dart';
-import 'package:student_app/view/homeScreen/widget/bottomSheetIconWidget.dart';
+import 'package:student_app/view/homeScreen/widget/bottom_sheet_icon_widget.dart';
 
 import '../../../constants/color/colors.dart';
 

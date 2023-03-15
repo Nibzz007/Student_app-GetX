@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:student_app/constants/size/sizedBox.dart';
+import 'package:student_app/constants/size/sized_box.dart';
 import 'package:student_app/constants/style/style.dart';
 import 'package:student_app/controller/student_controller.dart';
 import 'package:student_app/model/student_db.dart';

@@ -47,7 +47,7 @@ class StudentController extends GetxController {
     update();
   }
 
-  void deleteStudent(id,index) {
+  void deleteStudent(id, index) {
     studentDb.delete(id);
     list.removeAt(index);
     update();

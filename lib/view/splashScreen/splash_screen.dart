@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:student_app/constants/size/sizedBox.dart';
+import 'package:student_app/constants/size/sized_box.dart';
 import 'package:student_app/constants/style/style.dart';
 import 'package:student_app/view/bottomNav/bottom_nav.dart';
 

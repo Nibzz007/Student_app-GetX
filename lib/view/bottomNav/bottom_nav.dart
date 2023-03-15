@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:student_app/view/homeScreen/home_screen.dart';
-import 'package:student_app/view/listScreen/studentList_screen.dart';
+import 'package:student_app/view/listScreen/student_list_screen.dart';
 
 class BottomNav extends StatefulWidget {
   const BottomNav({super.key});
