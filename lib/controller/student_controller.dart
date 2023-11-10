@@ -1,7 +1,6 @@
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:student_app/model/student_db.dart';
-
 import '../main.dart';
 
 class StudentController extends GetxController {
@@ -10,7 +9,6 @@ class StudentController extends GetxController {
     list.clear();
     list.addAll(studentDb.values);
     update();
-
     super.onReady();
   }
 
